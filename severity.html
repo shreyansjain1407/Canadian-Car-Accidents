@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css">
+        <title>Severity Trends</title>
+    </head>
+</head>
+
+<body class="trends-page">
+
+    <div class="trends-page-grid">
+
+        <div class="back" onclick="goHome()">
+            <p>Back to Home</p>
+        </div>
+
+        <div class="trends-page-header">
+            <h1>Severity Trends</h1>
+        </div>
+
+        <div class="query" onclick="query1()">
+            <p>Calculate the ratio of fatalities to non-fatal injuries from accidents given a year and age group
+            </p>
+        </div>
+
+        <div class="query" onclick="query2()"> 
+            <p>Show a trend of the number of accidents showing each collision severity for a range of months or years. 
+            </p>
+        </div>
+    </div>
+</body>
+
+<script>
+        function goHome() {
+            window.location.href = "index.html";
+        }
+    
+        function query1(){
+            window.location.href = "severity/severity-query-1.html";
+        }
+    
+        function query2(){
+            window.location.href = "severity/severity-query-2.html";
+        }
+</script>
+
+</html>
